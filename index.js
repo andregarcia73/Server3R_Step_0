@@ -379,7 +379,7 @@
         };
 
     //---------------------------------------------------------------------------
-    // Envia Mensagem com Botões
+    // Send Message with Buttons
     //---------------------------------------------------------------------------
 
     // G.AddOption                  (Opt_Log,   Opt_ShowClick,  Opt_MethodName,         Opt_Caption);
