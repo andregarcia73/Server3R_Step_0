@@ -1,0 +1,26 @@
+{
+  "name": "charbotserver",
+  "version": "1.0.0",
+  "description": "Charbot Server",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "fb-messenger": "^0.1.4",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "No Test Command",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "No Git Repository yet"
+  },
+  "author": "",
+  "license": "ISC"
+}
