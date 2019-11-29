@@ -140,9 +140,7 @@
 
     Lib.RedirectToMenu = function Lib_RedirectToMenu(CSes)
         {
-        //  Lib.DebugLog_Log        ("Lib.RedirectToMenu", "(A)");  // TO_BE_CLEANED_IN_FINAL_VERSION
         CSes.res.redirect           ("/ProcessOption?MethodName=ShowLogs");
-        //  Lib.DebugLog_Log        ("Lib.RedirectToMenu", "(B)");  // TO_BE_CLEANED_IN_FINAL_VERSION
         };
 
     //---------------------------------------------------------------------------

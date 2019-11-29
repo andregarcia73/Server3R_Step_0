@@ -14,14 +14,6 @@
     //##
     //###########################################################################
     //###########################################################################
-    //##                                                                                                                // TO_BE_CLEANED_IN_FINAL_VERSION
-    //##    To verify (when run in heroku)                                                                              // TO_BE_CLEANED_IN_FINAL_VERSION
-    //##        2019-11-14T14:23:18.383743+00:00 app[web.1]: Warning: connect.session() MemoryStore is not              // TO_BE_CLEANED_IN_FINAL_VERSION
-    //##        2019-11-14T14:23:18.383792+00:00 app[web.1]: designed for a production environment, as it will leak     // TO_BE_CLEANED_IN_FINAL_VERSION
-    //##        2019-11-14T14:23:18.383795+00:00 app[web.1]: memory, and will not scale past a single process.          // TO_BE_CLEANED_IN_FINAL_VERSION
-    //##                                                                                                                // TO_BE_CLEANED_IN_FINAL_VERSION
-    //###########################################################################                                       // TO_BE_CLEANED_IN_FINAL_VERSION
-    //###########################################################################                                       // TO_BE_CLEANED_IN_FINAL_VERSION
 
     //---------------------------------------------------------------------------
     // Global vars
@@ -76,23 +68,6 @@
         G.User_Andre                = {};
         var User                    = G.User_Andre;
         User.ID                     = "<USER_ID>";
-        User.ID                     = "2516745478405591";                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-                                                                                                        // TO_BE_CLEANED_IN_FINAL_VERSION
-        // User: Cristina                                                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-        G.User_Cristina             = {};                                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-        var User                    = G.User_Cristina;                                                  // TO_BE_CLEANED_IN_FINAL_VERSION
-        User.ID                     = "3091657670908864";                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-                                                                                                        // TO_BE_CLEANED_IN_FINAL_VERSION
-        // User: Andre 2                                                                                // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  G.User_Andre2           = {};                                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  var User                = G.User_Andre2;                                                    // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  //  User.ID             = "10212885554488459";          // (#100) No matching user found    // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  //  User.ID             = "122775329137146";            // (#100) No matching user found    // TO_BE_CLEANED_IN_FINAL_VERSION
-                                                                                                        // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  // User: Mauricio                                                                           // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  G.User_Mauricio         = {};                                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  var User                = G.User_Mauricio;                                                  // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  User.ID                 = "";                                                               // TO_BE_CLEANED_IN_FINAL_VERSION
 
     //---------------------------------------------------------------------------
     // Apps
@@ -104,9 +79,6 @@
         App.ID                      = "<APP_ID>";
         App.Secret                  = "<APP_SECRET>";
         App.Token                   = "<APP_TOKEN>";
-        App.ID                      = "710301822769665";                                                // TO_BE_CLEANED_IN_FINAL_VERSION
-        App.Secret                  = "505304f670216a41a8e462834922f430";                               // TO_BE_CLEANED_IN_FINAL_VERSION
-        App.Token                   = "EAAKGBAfUWgEBALYjApvMiZCjz6ECk3kQHblgDN2pQOLtZA3mukJRqky0zZBjAZAZCvQVZAZA50WEk25RI1ZCslzZA4DV1uUkvukRq0iS0rD9pYpcvsjeHs1LiP0CYSZBXMjRw8hFFsEuJkMYiGTrWGBErfEZBXZCbSFdABAYoVlysZCrlEwZDZD";       // TO_BE_CLEANED_IN_FINAL_VERSION
 
         // App: BotIntelligence
         G.App_BotIntelligence       = {};
@@ -114,9 +86,6 @@
         App.ID                      = "<APP_ID>";
         App.Secret                  = "<APP_SECRET>";
         App.Token                   = "<APP_TOKEN>";
-        App.ID                      = "2526381890748474";                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-        App.Secret                  = "0143b26c6895dd95eaa9109a2a6f7812";                               // TO_BE_CLEANED_IN_FINAL_VERSION
-        App.Token                   = "EAAj5ux8qQDoBADEiy7ZCX8ZBIesLlX3pUhZCKq2efkQFQPJPsx10JifDoyuYVNN7xNdia6J2DhZA2DCiNP1MnFZCQbBKyNpZCzkhSrRdisFj6pjXvtvFweSjaDyZBZBANqGG8LYcvsYcZA7l0TaJzbWc4KqbB2YAZB7IBccYGhJaMLXwZDZD";          // TO_BE_CLEANED_IN_FINAL_VERSION
 
     //---------------------------------------------------------------------------
     // Pages
@@ -240,7 +209,7 @@
 
     app.post('/webhook2/', function(req, res)
         {
-        Lib.Session_Begin           ("app.<b>post</b>.webhook2", Lib.Inspect(req.body, "req.body"));    // "req.body = " + JSON.stringify(req.body) // TO_BE_CLEANED_IN_FINAL_VERSION
+        Lib.Session_Begin           ("app.<b>post</b>.webhook2", Lib.Inspect(req.body, "req.body"));
         try
             {
             //  var B               = C;                            // Error Simulation
@@ -293,8 +262,6 @@
                     G.ArrSenderIDs.push(sender);
                     }
 
-                //  Lib.DebugLog_Log("webhook2", Lib.Inspect(event, "event"));                                                  // TO_BE_CLEANED_IN_FINAL_VERSION
-                //  sendText        (sender, "Oi");                 // CAREFULL HERE: BECAMES IN LOOP                           // TO_BE_CLEANED_IN_FINAL_VERSION
                 if (event.message && event.message.text)
                     {
                     // Gets ReceivedMsg
@@ -326,7 +293,6 @@
                         });
 
                     // Sends ResponseMsg
-                    //  sendText        (sender, ResponseMsg); // No longer used (Deprecated)                           // TO_BE_CLEANED_IN_FINAL_VERSION
                     //G.SendTextMessage (CSes, Page_Token,          User_ID,    MsgToSend,   Buttons);
                     G.SendTextMessage   (null, G.SendMessage_Token, sender,     ResponseMsg, Buttons);
                     }
@@ -339,44 +305,6 @@
             }
         });
 
-    //---------------------------------------------------------------------------                                                       // TO_BE_CLEANED_IN_FINAL_VERSION
-    // Here is the method that sends the echo message                                                                                   // TO_BE_CLEANED_IN_FINAL_VERSION
-    //---------------------------------------------------------------------------                                                       // TO_BE_CLEANED_IN_FINAL_VERSION
-    //function sendText(sender, text)                                                                                                   // TO_BE_CLEANED_IN_FINAL_VERSION
-    //  {                                                                                                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-    //  var ToInspect               = {};                                                                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-    //  ToInspect.sender            = sender;                                                                                           // TO_BE_CLEANED_IN_FINAL_VERSION
-    //  ToInspect.text              = text;                                                                                             // TO_BE_CLEANED_IN_FINAL_VERSION
-    //  Lib.DebugLog_Log            ("sendText", Lib.Inspect(ToInspect, "ToInspect"));                                                  // TO_BE_CLEANED_IN_FINAL_VERSION
-    //  let messageData             = {text: text};                                                                                     // TO_BE_CLEANED_IN_FINAL_VERSION
-    //  request                     (                                                                                                   // TO_BE_CLEANED_IN_FINAL_VERSION
-    //      {                                                                                                                           // TO_BE_CLEANED_IN_FINAL_VERSION
-    //      url                     : "https://graph.facebook.com/v2.6/me/messages",                                                    // TO_BE_CLEANED_IN_FINAL_VERSION
-    //      qs                      : {access_token: G.SendMessage_Token},          // Query String with the above G.SendMessage_Token  // TO_BE_CLEANED_IN_FINAL_VERSION
-    //      method                  : "POST",                                                                                           // TO_BE_CLEANED_IN_FINAL_VERSION
-    //      json                    :                                                                                                   // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          {                                                                                                                       // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          recipient           : {id: sender},                                                                                     // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          message             : messageData,                                                                                      // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          }                                                                                                                       // TO_BE_CLEANED_IN_FINAL_VERSION
-    //      }, function(error, response, body)                                                                                          // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          {                                                                                                                       // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          if (error)                                                                                                              // TO_BE_CLEANED_IN_FINAL_VERSION
-    //              {                                                                                                                   // TO_BE_CLEANED_IN_FINAL_VERSION
-    //              //  console.log ("sending error");                                                                                  // TO_BE_CLEANED_IN_FINAL_VERSION
-    //              Lib.DebugLog_Log("sendText", "sending error: " + error);                                                            // TO_BE_CLEANED_IN_FINAL_VERSION
-    //              }                                                                                                                   // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          else                                                                                                                    // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          if (response.body.error)                                                                                                // TO_BE_CLEANED_IN_FINAL_VERSION
-    //              {                                                                                                                   // TO_BE_CLEANED_IN_FINAL_VERSION
-    //              //  console.log ("response body error");                                                                            // TO_BE_CLEANED_IN_FINAL_VERSION
-    //              Lib.DebugLog_Log("sendText", Lib.Inspect(body.error, "Error occurred (in body.error):"));                           // TO_BE_CLEANED_IN_FINAL_VERSION
-    //              }                                                                                                                   // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          else                                                                                                                    // TO_BE_CLEANED_IN_FINAL_VERSION
-    //              Lib.DebugLog_Log("sendText", "Message sent correctly");                                                             // TO_BE_CLEANED_IN_FINAL_VERSION
-    //          }                                                                                                                       // TO_BE_CLEANED_IN_FINAL_VERSION
-    //      );                                                                                                                          // TO_BE_CLEANED_IN_FINAL_VERSION
-    //  };                                                                                                                              // TO_BE_CLEANED_IN_FINAL_VERSION
 
     //===========================================================================
     //===========================================================================
@@ -445,13 +373,9 @@
         var MessageToSend           = "Mensagem enviada\r\nVia Send API\r\nem: " + (new Date()).ToStr();
         G.SendTextMessage           (CSes, G.SendMessage_Token, G.SendMessage_User.ID, MessageToSend, [], function (Prps)
             {
-            //  Lib.DebugLog_Log    ("G.BotProativoAPIS", Lib.Inspect(Prps, "Prps in event"));                                                                      // TO_BE_CLEANED_IN_FINAL_VERSION
             // Redirect to Menu
             Lib.RedirectToMenu      (CSes);
             });
-        // Remove below comment to see 2 messages sent                                                                                                              // TO_BE_CLEANED_IN_FINAL_VERSION
-        // OBSERVED: Sometimes the second message arrives to the user first than the very first message (?!?!?!?!)                                                  // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  G.SendTextMessage       (CSes, G.SendMessage_Token, G.SendMessage_User.ID, "Mensagem enviada 2\r\nVia Send API\r\nem: " + (new Date()).ToStr(), []);    // TO_BE_CLEANED_IN_FINAL_VERSION
         };
 
     //---------------------------------------------------------------------------
@@ -484,7 +408,6 @@
             });
         G.SendTextMessage           (CSes, G.SendMessage_Token, G.SendMessage_User.ID, MessageToSend, Buttons, function (Prps)
             {
-            //  Lib.DebugLog_Log    ("G.BotProativoAPIS", Lib.Inspect(Prps, "Prps in event"));                                                      // TO_BE_CLEANED_IN_FINAL_VERSION
             // Redirect to Menu
             Lib.RedirectToMenu      (CSes);
             });
@@ -554,10 +477,6 @@
         // Send the request
         request                     (InfoObj, function (error, response, body)
             {
-            //                                                                                                              // TO_BE_CLEANED_IN_FINAL_VERSION
-            // Show the request event arguments                                                                             // TO_BE_CLEANED_IN_FINAL_VERSION
-            //  Lib.DebugLog_Log    ("G.SendTextMessage", Lib.Inspect(arguments, "Inspecting request event arguments"));    // TO_BE_CLEANED_IN_FINAL_VERSION
-
             // Error ?
             if (body)
                 {

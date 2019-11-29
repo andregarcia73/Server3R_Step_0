@@ -3,35 +3,26 @@ HOST: https://damp-shelf-01778.herokuapp.com
 
 # Server3R Fase 0
 
-<hr>
+***
+
 # Objetivo
 
 **Server3R Fase 0** é um projeto cujo propósito é a verificação e estudos
 de tecnologias para se implementar uma plataforma de ensino à distância.
 
-<hr>
+
+
+
+***
 
 # Escopo de estudo
 
-
-<hr>
-# Escopo de estudo
-
-<hr>
-## Escopo de estudo
-
-<hr>
-
-## Escopo de estudo
-
-Neste projeto está implementado um robô que conversa com usuários
+Neste projeto está implementado (dentre outras coisas) um robô que conversa com usuários
 que acessam uma página do Facebook.
 
-Trata-se da página:<br>
-**Sistema de Gestão com Consultoria**
+Trata-se da página: **Sistema de Gestão com Consultoria**
 
-...que pode ser acessa via:<br>
-[https://www.facebook.com/xpnet73/](https://www.facebook.com/xpnet73/)
+...que pode ser acessa via: [https://www.facebook.com/xpnet73/](https://www.facebook.com/xpnet73/)
 
 Então, no projeto estão demonstradas as tecnologias
 utilizadas para se fazer isso.
@@ -44,7 +35,8 @@ vai providenciar respostas.
 
 
 
-<hr>
+***
+
 # Arquitetura
 
 No Facebook foi criado o aplicativo onde foi cadastrado o Webhook:
@@ -55,8 +47,8 @@ para o qual o Facebook vai enviar e receber mensagens a partir
 das mensagens enviadas pelos usuários, pelo Messenger, para
 a página acima.
 
-Nesse Webhook existe um programa feito em Javascript que roda em NodeJS
-hospedado na plataforma Heroku.
+Foi feito um programa feito em Javascript que roda em NodeJS
+hospedado na plataforma Heroku que "escuta" esse Webhook.
 
 Além de se respoder automaticamente às mensagens dos usuários,
 o programa permite a observação e testes de diversos aspectos
@@ -67,7 +59,8 @@ das tecnologias oferecida pelo Facebook.
 
 
 
-<hr>
+***
+
 # Operação
 
 Acesse:
@@ -128,7 +121,8 @@ Este clique se permite demonstrar a interface entre o
 Login via Facebook e sua identificação do Usuário pelo programa.
 
 
-<hr>
+***
+
 # Implementação
 
 Você encontra os fontes desse projeto em:
@@ -145,12 +139,10 @@ este módulo está facilmente identificado em "blocos".
 Assim, por exemplo, se você desejar saber como se faz para se enviar
 mensagens com botões, basta procurar o "bloco":
 
-<code>
-    //---------------------------------------------------------------------------<br>
-    // Send Text Message via API Send<br>
-    //---------------------------------------------------------------------------<br>
-    ...<br>
-</code>
+//---------------------------------------------------------------------------<br>
+// Send Text Message via API Send<br>
+//---------------------------------------------------------------------------<br>
+...<br>
 
 ## lib.js
 
@@ -164,7 +156,9 @@ Aqui reside o módulo de funções que analisam e permitem mensagens de resposta
 
 Esta é uma base de dados de teste de perguntas e respostas.
 
-<hr>
+
+***
+
 # Conclusão
 
 Através desta fase foi possível demonstrar que é possível se implementar um
@@ -184,3 +178,4 @@ Podem, portanto ser feitas coisas como:
 
 Em resumo, é possível se desenvolver um completo programa, baseado em robôs, que
 conduzem os usuários a um aumento de conhecimento.
+

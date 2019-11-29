@@ -14,7 +14,6 @@
         // Array of I/Os
         var G_IOsTable              = [];
         var G_ShowConvInput         = ! false;
-        //  var G_ShowConvInput     =   false;                                                                      // TO_BE_CLEANED_IN_FINAL_VERSION
 
     //===========================================================================
     //===========================================================================
@@ -40,10 +39,6 @@
         // Reset Array of I/Os
         G_IOsTable                  = [];
 
-        // Adds I/O itemn in I/Os Table                                                                             // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  var Test                = "";                                                                           // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  for (var i = 1; i < 255; i++)                                                                           // TO_BE_CLEANED_IN_FINAL_VERSION
-        //      Test               += String.fromCharCode(i);                                                       // TO_BE_CLEANED_IN_FINAL_VERSION
 
         var fs                      = require('fs');
         var FileContent             = fs.readFileSync("./BotDataBase.txt") + "";
@@ -57,14 +52,12 @@
             var Pergunta            = "" + RegExp.$1;
             var Resposta            = "" + RegExp.$2;
             StrValue                = "" + RegExp.rightContext;
-            //  Lib.DebugLog_Log    ("BuildIOsTable", "AddIOItem(\"" + Pergunta + "\", \"" + Resposta + "\")");     // TO_BE_CLEANED_IN_FINAL_VERSION
             AddIOItem               (Pergunta, Resposta);
 
             // Runs again on right context
             Pattern                 = new RegExp(StrPattern, "gi");
             RE                      = Pattern.exec(StrValue);
             }
-        //  Lib.DebugLog_Log        ("BuildIOsTable", "G_IOsTable.length = " + G_IOsTable.length);                  // TO_BE_CLEANED_IN_FINAL_VERSION
 
         // Store
         Lib.Stored_G_IOsTable       = G_IOsTable;
@@ -936,10 +929,6 @@
         Ask.Question                = G_IOsTable[0].Input;
         Ask.Answer                  = G_IOsTable[0].Output;
 
-        // CutAccents                                               // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  Ask.AskQuestion         = CutAccents(Ask.AskQuestion);  // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  Ask.Question            = CutAccents(Ask.Question);     // TO_BE_CLEANED_IN_FINAL_VERSION
-        //  Ask.Answer              = CutAccents(Ask.Answer);       // TO_BE_CLEANED_IN_FINAL_VERSION
         };
 
 //###########################################################################
