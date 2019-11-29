@@ -9,11 +9,20 @@ HOST: https://damp-shelf-01778.herokuapp.com
 **Server3R Fase 0** é um projeto cujo propósito é a verificação e estudos
 de tecnologias para se implementar uma plataforma de ensino à distância.
 
+<hr>
 
+# Escopo de estudo
 
 
 <hr>
 # Escopo de estudo
+
+<hr>
+## Escopo de estudo
+
+<hr>
+
+## Escopo de estudo
 
 Neste projeto está implementado um robô que conversa com usuários
 que acessam uma página do Facebook.
